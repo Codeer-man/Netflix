@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        .background {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('https://assets.nflxext.com/ffe/siteui/vlv3/3e15e7cf-1a5a-46a4-b5a7-e8dc88f398be/9752dce2-dad7-4b87-8100-e66b46d7c0e2/IN-en-20230602-popsignuptwoweeks-perspective_alpha_website_medium.jpg') center center/cover no-repeat;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+        .navbar img {
+            width: 150px;
+        }
+        .navbar button {
+            background-color: #e50914;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .content h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .input-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .input-container input {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 2px 0 0 2px;
+            font-size: 16px;
+        }
+        .input-container button {
+            background-color: #e50914;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 0 2px 2px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="overlay"></div>
+        <div class="navbar">
+            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/dd4dfce3-1a39-4b1a-8e19-b7242da17e68/18d0a597-bfe0-4b38-9818-9b3528e889bc/NP-en-20240527-popsignuptwoweeks-perspective_alpha_website_medium.jpg" alt="Netflix Logo">
+            <button>Sign In</button>
+        </div>
+        <div class="content">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <h2>Watch anywhere. Cancel anytime.</h2>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="input-container">
+                <input type="email" placeholder="Email address">
+                <button>Get Started ></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
